@@ -2,31 +2,25 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>UNO Online 🎲</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNO Online </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container" id="login">
-    <h1>UNO Online 🎨</h1>
-    <input type="text" id="nome" placeholder="Seu nome">
-    <button onclick="criarSala()">Criar Sala</button>
-    <input type="text" id="codigoSala" placeholder="Código da sala">
-    <button onclick="entrarSala()">Entrar na Sala</button>
-</div>
+    <div class="container">
+        <h1> UNO Online</h1>
 
-<div class="container" id="sala" style="display: none;">
-    <h2>Sala <span id="codigo"></span></h2>
-    <div id="jogadores"></div>
-    <p id="status"></p>
-    <button onclick="iniciarJogo()">Iniciar Jogo</button>
-</div>
+        <input type="text" id="nome" placeholder="Seu nome">
 
-<div class="container" id="jogo" style="display: none;">
-    <h2>🎯 Jogo Iniciado!</h2>
-    <p>A interface das cartas vai aqui...</p>
-</div>
+        <button onclick="criarSala()">➕ Criar Sala</button>
 
-<script src="script.js"></script>
+        <p>ou</p>
+
+        <input type="text" id="codigoSala" placeholder="Código da sala">
+        <button onclick="entrarSala()">🔑 Entrar na Sala</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
